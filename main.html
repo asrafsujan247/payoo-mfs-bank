@@ -95,9 +95,9 @@
                       class="select px-4 rounded-2xl border-none bg-gray-200 text-gray-500"
                     >
                       <option disabled selected>Select bank</option>
-                      <option>Crimson</option>
-                      <option>Amber</option>
-                      <option>Velvet</option>
+                      <option value="Bkash">Bkash</option>
+                      <option value="Nagad">Nagad</option>
+                      <option value="DBBL">DBBL</option>
                     </select>
                     <fieldset class="fieldset">
                       <label
@@ -106,16 +106,30 @@
                       >
                       <input
                         type="number"
-                        class="input px-4 rounded-2xl border-none bg-gray-200"
+                        class="input px-4 rounded-2xl border-none bg-gray-200 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                         placeholder="Enter 11 digit account number"
+                        required
                       />
-                      <label class="fieldset-label">Password</label>
+                      <label
+                        class="fieldset-label font-semibold text-sm text-black"
+                        >Amount to Add</label
+                      >
                       <input
-                        type="password"
-                        class="input"
-                        placeholder="Password"
+                        type="number"
+                        class="input px-4 rounded-2xl border-none bg-gray-200 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        placeholder="Add Amount to withdraw"
+                        required
                       />
-
+                      <label
+                        class="fieldset-label font-semibold text-sm text-black"
+                        >4 Digit Pin</label
+                      >
+                      <input
+                        type="text"
+                        class="input px-4 rounded-2xl border-none bg-gray-200"
+                        placeholder="Enter 4 Digit Pin"
+                        required
+                      />
                       <button class="btn btn-primary mt-4 rounded-xl">
                         Add Money
                       </button>
