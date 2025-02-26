@@ -6,11 +6,11 @@ document
     const pinInput = document.getElementById("pin-input-field").value;
     if (numberInput.length === 11) {
       if (parseInt(pinInput) === 1234) {
-        console.log("okay thik ache");
+        window.location.href = "../main.html";
       } else {
-        console.log("pin thik nai");
+        alert("pin thik nai");
       }
     } else {
-      console.log("need valid number");
+      alert("need valid number");
     }
   });
