@@ -32,30 +32,40 @@
           <div
             class="card bg-base-100 w-full max-w-sm shrink-0 shadow-lg rounded-2xl"
           >
-            <div class="card-body">
+            <form class="card-body">
               <fieldset class="fieldset">
                 <label class="fieldset-label font-semibold text-sm text-black"
                   >Mobile Number</label
                 >
                 <input
+                  value="01991776232"
+                  id="number-input-field"
                   type="number"
-                  class="input px-4 rounded-2xl border-none bg-gray-200"
+                  class="input px-4 rounded-2xl border-none bg-gray-200 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                   placeholder="Enter your number"
+                  required
                 />
                 <label class="fieldset-label font-semibold text-sm text-black"
                   >4 Digit Pin</label
                 >
                 <input
+                  value="1234"
+                  id="pin-input-field"
                   type="text"
                   class="input px-4 rounded-2xl border-none bg-gray-200"
                   placeholder="Enter 4 Digit Pin"
+                  required
                 />
-                <button class="btn btn-primary mt-4">Login</button>
+                <button id="btn-login" class="btn btn-primary mt-4">
+                  Login
+                </button>
               </fieldset>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
+    <!-- script -->
+    <script src="./js/login.js"></script>
   </body>
 </html>
