@@ -12,5 +12,50 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body></body>
+  <body class="bg-slate-800">
+    <!-- login section -->
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+      <!-- header -->
+      <header>
+        <nav class="flex justify-center items-center mt-10">
+          <div
+            class="mt-10 relative flex justify-center items-center w-9/12 mb-10"
+          >
+            <img class="w-48 absolute" src="./assets/bg.png" alt="" />
+            <img class="w-16" src="./assets/Group.png" alt="" />
+          </div>
+        </nav>
+      </header>
+      <!-- login section -->
+      <div class="w-full">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div
+            class="card bg-base-100 w-full max-w-sm shrink-0 shadow-lg rounded-2xl"
+          >
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label font-semibold text-sm text-black"
+                  >Mobile Number</label
+                >
+                <input
+                  type="number"
+                  class="input px-4 rounded-2xl border-none bg-gray-200"
+                  placeholder="Enter your number"
+                />
+                <label class="fieldset-label font-semibold text-sm text-black"
+                  >4 Digit Pin</label
+                >
+                <input
+                  type="text"
+                  class="input px-4 rounded-2xl border-none bg-gray-200"
+                  placeholder="Enter 4 Digit Pin"
+                />
+                <button class="btn btn-primary mt-4">Login</button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
