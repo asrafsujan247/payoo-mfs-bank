@@ -45,12 +45,14 @@
           <!-- service cards -->
           <div class="cards grid grid-cols-3 gap-3">
             <div
+              id="add-money-card"
               class="card cursor-pointer border border-gray-300 p-3 flex justify-center items-center"
             >
               <img class="w-6" src="./assets/wallet1.png" alt="" />
               <h3 class="text-sm text-gray-700">Add Money</h3>
             </div>
             <div
+              id="cashout-card"
               class="card cursor-pointer border border-gray-300 p-3 flex justify-center items-center"
             >
               <img class="w-6" src="./assets/send1.png" alt="" />
@@ -82,7 +84,7 @@
             </div>
           </div>
           <!-- add money section -->
-          <section class="my-10">
+          <section id="add-money-section" class="my-10">
             <h2 class="text-xl font-bold">Add Money</h2>
             <div class="">
               <div class="hero-content flex-col lg:flex-row-reverse">
@@ -150,10 +152,68 @@
               </div>
             </div>
           </section>
+          <!-- cashout section -->
+          <section id="cashout-section" class="my-10">
+            <h2 class="text-xl font-bold">Cash Out</h2>
+            <div class="">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div
+                  class="card bg-base-50 w-full max-w-sm shrink-0 shadow-xl rounded-2xl"
+                >
+                  <form class="card-body">
+                    <fieldset class="fieldset">
+                      <label
+                        class="fieldset-label font-semibold text-sm text-black"
+                        >Agent Number</label
+                      >
+                      <input
+                        id="agent-number"
+                        value="01991776232"
+                        type="number"
+                        class="input px-4 rounded-2xl border-none bg-gray-200 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        placeholder="Enter 11 digit account number"
+                        required
+                      />
+                      <label
+                        class="fieldset-label font-semibold text-sm text-black"
+                        >Amount</label
+                      >
+                      <input
+                        id="amount-input"
+                        type="number"
+                        class="input px-4 rounded-2xl border-none bg-gray-200 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        placeholder="Type your amount"
+                        required
+                      />
+                      <label
+                        class="fieldset-label font-semibold text-sm text-black"
+                        >4 Digit Pin</label
+                      >
+                      <input
+                        id="pin-input"
+                        value="1234"
+                        type="text"
+                        class="input px-4 rounded-2xl border-none bg-gray-200"
+                        placeholder="Enter 4 Digit Pin"
+                        required
+                      />
+                      <button
+                        id="withdraw-money-btn"
+                        class="btn btn-primary mt-4 rounded-xl"
+                      >
+                        Withdraw Money
+                      </button>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
       </header>
     </section>
     <!-- script -->
     <script src="./js/addMoney.js"></script>
+    <script src="./js/toggle.js"></script>
   </body>
 </html>
