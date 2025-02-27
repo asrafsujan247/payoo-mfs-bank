@@ -9,7 +9,6 @@ document
     const pin = document.getElementById("pin-input").value;
     const mainBalance = document.getElementById("main-balance").innerText;
     const convertedMainBalance = parseFloat(mainBalance);
-    console.log(selectBankMethod);
     if (parseInt(pin) === 1234) {
       if (amount) {
         if (selectBankMethod === "Select bank") {
