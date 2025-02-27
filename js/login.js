@@ -8,9 +8,9 @@ document
       if (parseInt(pinInput) === 1234) {
         window.location.href = "../main.html";
       } else {
-        alert("pin thik nai");
+        alert("Your Pin is not correct");
       }
     } else {
-      alert("need valid number");
+      alert("Need valid number");
     }
   });

@@ -105,6 +105,7 @@
                         >Bank Account Number</label
                       >
                       <input
+                        value="01991776232"
                         type="number"
                         class="input px-4 rounded-2xl border-none bg-gray-200 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                         placeholder="Enter 11 digit account number"
@@ -117,7 +118,7 @@
                       <input
                         type="number"
                         class="input px-4 rounded-2xl border-none bg-gray-200 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                        placeholder="Add Amount to withdraw"
+                        placeholder="Type your amount"
                         required
                       />
                       <label
@@ -125,12 +126,16 @@
                         >4 Digit Pin</label
                       >
                       <input
+                        value="1234"
                         type="text"
                         class="input px-4 rounded-2xl border-none bg-gray-200"
                         placeholder="Enter 4 Digit Pin"
                         required
                       />
-                      <button class="btn btn-primary mt-4 rounded-xl">
+                      <button
+                        id="add-money"
+                        class="btn btn-primary mt-4 rounded-xl"
+                      >
                         Add Money
                       </button>
                     </fieldset>
@@ -142,5 +147,7 @@
         </section>
       </header>
     </section>
+    <!-- script -->
+    <script src="./js/addMoney.js"></script>
   </body>
 </html>
