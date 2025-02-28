@@ -7,7 +7,7 @@ document
 
     if (number.length === 11) {
       if (parseInt(pin) === 1234) {
-        window.location.href = "../main.html";
+        window.location.href = "main.html";
       } else {
         alert("Provide valid Pin");
       }
