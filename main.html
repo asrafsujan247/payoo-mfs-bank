@@ -77,6 +77,7 @@
               <h3 class="text-sm text-gray-700">Pay Bill</h3>
             </div>
             <div
+              id="transaction-card"
               class="card cursor-pointer border border-gray-300 p-3 flex justify-center items-center"
             >
               <img class="w-6" src="./assets/transaction1.png" alt="" />
@@ -111,6 +112,7 @@
                         >Bank Account Number</label
                       >
                       <input
+                        id="account-number"
                         value="01991776232"
                         type="number"
                         class="input px-4 rounded-2xl border-none bg-gray-200 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
@@ -209,12 +211,19 @@
               </div>
             </div>
           </section>
+          <!-- transaction history section -->
+          <section id="transaction-history-section" class="my-10">
+            <h2 class="text-xl font-bold">Transaction History</h2>
+            <div id="transaction-container"></div>
+          </section>
         </section>
       </header>
     </section>
     <!-- script -->
+    <script src="./utilities/utilities.js"></script>
     <script src="./js/addMoney.js"></script>
     <script src="./js/toggle.js"></script>
     <script src="./js/cashout.js"></script>
+    <script src="./js/transactionHistory.js"></script>
   </body>
 </html>

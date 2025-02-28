@@ -3,10 +3,10 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     const number = document.getElementById("number-input-field").value;
-    const pin = document.getElementById("pin-input-field").value;
-    const convertedPin = parseInt(pin);
+    const pin = getInputValueById("pin-input-field");
+
     if (number.length === 11) {
-      if (convertedPin === 1234) {
+      if (pin === 1234) {
         window.location.href = "../main.html";
       } else {
         alert("Provide valid Pin");
